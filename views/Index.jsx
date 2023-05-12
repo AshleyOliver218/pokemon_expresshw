@@ -30,7 +30,7 @@ const myStyle = {
                         return (
                             <li style={listStyle}>
                                
-                                <a style={listStyle} href={`/pokemon/${i}`}>
+                                <a style={listStyle} href={`/pokemon/${pokemon.id}`}>
                                     {pokemon.name.charAt(0).toUpperCase()+pokemon.name.slice(1)}
                                 </a>{' '}
                                 
@@ -38,7 +38,7 @@ const myStyle = {
                         );
                     })}
                 </ul>
-
+                    <a href={`/pokemon/new`}>Register New Pokemon</a>
         </div>
         )
         }
